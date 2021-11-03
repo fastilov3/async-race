@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+html {
+    font-size: 10px;
+    // font-weight: 500;
+    font-family: 'Indie Flower', cursive;
+    ;
+    font-style: normal;
+    color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.button {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: rgb(21, 230, 202);
+    border-bottom: 3px solid #8000ff;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    &:hover {
+        cursor: pointer;
+        opacity: .9;
+    }
+}
+
+.general-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.car-name {
+    color: gold;
+    font-size: 2.4rem;
+    margin-left: 1.5rem;
+}
+
+.road {
+    position: relative;
+    border-bottom: 1px dashed white;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    .car-panel {
+        display: flex;
+        margin-bottom: 2rem;
+        .car {
+            position: absolute;
+            margin-top: 2rem;
+            left: 10rem;
+        }
+    }
+    .flag {
+        padding-top: 0rem;
+        font-size: 4rem;
+        height: 20px;
+        margin-right: 10rem;
+        color: coral;
+    }
+}
+
+.main {
+    margin-left: 1rem;
+}
+
+.menu {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.primary {
+    background-color: rgb(99, 202, 225);
+    border-radius: 5px;
+    border-bottom: 4px solid #faf;
+    color: rgb(70, 21, 21);
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(80, 94, 220);
+    }
+}
+
+.form {
+    width: 32.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    .input,
+    .color {
+        height: 3rem;
+    }
+}
+
+// Garage 
+.main-title {
+    margin-top: 2rem;
+    font-size: 3.6rem;
+    color: #8000ff;
+}
+
+.second-title {
+    font-size: 2.4rem;
+    color: #8000ff;
+    margin-bottom: 2rem;
+}
+
+#garage {
+    margin-bottom: 2rem;
+}
+
+// Car
+.start-engine-button {
+    background-color: #000;
+    border: 2px solid rgb(36, 206, 36);
+    color: rgb(75, 252, 75);
+}
+
+.stop-engine-button {
+    background-color: #000;
+    border: 2px solid rgb(233, 32, 32);
+    color: rgb(233, 32, 32);
+}
+
+// Winners
+.table {
+    margin-bottom: 10rem;
+}
+
+.table td,
+.table th {
+    font-size: 2rem;
+    padding: 0.8rem;
+}
+
+.table th {
+    background: rgb(71, 137, 213);
+}
+
+.table-button {
+    cursor: pointer;
+    user-select: none;
+}
+
+// Message
+.message {
+    position: fixed;
+    top: 0%;
+    left: calc(50% - 25rem);
+    text-align: center;
+    display: none;
+    font-size: 5rem;
+    width: 50rem;
+}
+
+.message.visible {
+    display: block;
+}
